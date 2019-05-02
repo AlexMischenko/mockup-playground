@@ -8,7 +8,6 @@
 .page-layout {
   height: 100%;
   width: 100%;
-  // background-color: rgb(214, 252, 222);
 }
 nav {
   position: fixed;
@@ -20,10 +19,9 @@ nav {
   padding: 10px 40px;
   padding-left: 40px;
   padding-right: 40px;
-  // background-color: pink;
   height: 50px;
 }
-section {
+main {
   margin-top: 50px; /* Add a top margin to avoid content overlay */
 }
 
