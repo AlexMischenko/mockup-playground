@@ -90,7 +90,9 @@ a.menu-toggle-btn:hover {
 }
 
 .side-drawer-ovelay {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);

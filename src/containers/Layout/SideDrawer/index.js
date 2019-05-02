@@ -40,22 +40,22 @@ const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
             <div className="side-drawer-menu">
               <ui>
                 <li className="side-drawer-menu-item">
-                  <NavLink activeClassName="side-drawer-menu-item" to="/">
+                  <NavLink className="side-drawer-menu-item" to="/">
                     Home
                   </NavLink>
                 </li>
                 <li className="side-drawer-menu-item">
-                  <NavLink activeClassName="side-drawer-menu-item" to="/post">
+                  <NavLink className="side-drawer-menu-item" to="/post">
                     Posts
                   </NavLink>
                 </li>
                 <li className="side-drawer-menu-item">
-                  <NavLink activeClassName="side-drawer-menu-item" to="/">
+                  <NavLink className="side-drawer-menu-item" to="/qwer">
                     Gallery
                   </NavLink>
                 </li>
                 <li className="side-drawer-menu-item">
-                  <NavLink activeClassName="side-drawer-menu-item" to="/">
+                  <NavLink className="side-drawer-menu-item" to="/asdf">
                     Contact
                   </NavLink>
                 </li>
