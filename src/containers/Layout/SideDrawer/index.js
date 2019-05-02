@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
   if (sideDrawerVisible) {
     return (
-      <div className="side-drawer-ovelay" onClick={closeSideDrawer}>
+      <aside className="side-drawer-ovelay" onClick={closeSideDrawer}>
         <div className="side-drawer">
           <div className="side-drawer-close-btn">
             <a className="menu-close-btn" href="#" onClick={closeSideDrawer}>
@@ -13,7 +13,7 @@ const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
             </a>
           </div>
           <div className="side-drawer-content">
-            <div className="side-drawer-header">
+            <header className="side-drawer-header">
               <h4>Hello,</h4>
               <div className="side-drawer-message">
                 Vesibulum commodo volutpat a, convallis ac, laoreet encodeURIComponent. Phasallus fermentum in, dolor.
@@ -21,7 +21,7 @@ const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
                 <br />
                 Pellentesque facillisis. Nullaimperdient sit amet magna.
               </div>
-              <div className="side-drawer-social">
+              <div className="social-media">
                 <a className="social-link" href="https://www.google.com">
                   <i className="fab fa-ravelry" />
                 </a>
@@ -35,7 +35,7 @@ const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
                   <i class="fab fa-twitter" />
                 </a>
               </div>
-            </div>
+            </header>
 
             <div className="side-drawer-menu">
               <ui>
@@ -63,7 +63,7 @@ const SideDrawer = ({ sideDrawerVisible, closeSideDrawer }) => {
             </div>
           </div>
         </div>
-      </div>
+      </aside>
     )
   }
   return React.Fragment

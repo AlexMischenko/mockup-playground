@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const PostDetailsPage = () => {
-  return <main>PostDetailsPage</main>
+  return <section className="post-page">PostDetailsPage</section>
 }
 
 // PostDetailsPage.defaultProps = {}

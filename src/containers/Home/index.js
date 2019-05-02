@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import HomePageLayout from './HomePageLayout'
 
 const HomePage = () => {
-  return <main className="home-page">HomePage</main>
+  return <HomePageLayout />
 }
 
 // HomePage.defaultProps = {}
