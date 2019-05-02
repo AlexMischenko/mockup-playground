@@ -1,14 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import HomePageLayout from './HomePageLayout'
+import MockData from '../mockData'
 
 const HomePage = () => {
-  return <HomePageLayout />
+  return <HomePageLayout posts={MockData} />
 }
-
-// HomePage.defaultProps = {}
-
-// HomePage.propTypes = {
-// }
 
 export default HomePage

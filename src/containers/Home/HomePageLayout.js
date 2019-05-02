@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const HomePageLayout = () => (
+const HomePageLayout = ({ posts }) => (
   <main className="home-page">
     <header className="home-page-header">
       <div className="social-media">
@@ -20,7 +21,22 @@ const HomePageLayout = () => (
       <h1>Constellation</h1>
       <h5>If I vreate from the heart, nearly everything works; if from the head, almost nothing</h5>
     </header>
+    <section className="home-page-posts-block">
+      {posts.map(post => (
+        <article className="home-page-post">
+          <div />
+        </article>
+      ))}
+    </section>
   </main>
 )
+
+HomePageLayout.defaultProps = {
+  posts: [],
+}
+
+HomePageLayout.propTypes = {
+  posts: PropTypes.array,
+}
 
 export default HomePageLayout
