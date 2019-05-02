@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const TopBar = () => (
+const TopBar = ({ openSideDrawer }) => (
   <nav>
-    <a className="menu-toggle-btn" href="#" onClick={() => alert('Open SideDrawer')}>
+    <a className="menu-toggle-btn" href="#" onClick={openSideDrawer}>
       <i className="material-icons md-30">menu</i>
     </a>
 
@@ -12,5 +13,9 @@ const TopBar = () => (
     </form>
   </nav>
 )
+
+TopBar.propTypes = {
+  openSideDrawer: PropTypes.func.isRequired,
+}
 
 export default TopBar

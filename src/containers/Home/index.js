@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const HomePage = () => {
-  return <div className="home-page">HomePage</div>
+  return <main className="home-page">HomePage</main>
 }
 
 // HomePage.defaultProps = {}

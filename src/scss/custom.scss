@@ -52,6 +52,9 @@
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -59,7 +62,12 @@ nav {
   padding-left: 40px;
   padding-right: 40px;
   background-color: pink;
+  height: 50px;
 }
+main {
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
 a.menu-toggle-btn {
   color: black;
 }
@@ -86,6 +94,7 @@ a.menu-toggle-btn:hover {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 .side-drawer {
   position: absolute;
@@ -93,6 +102,7 @@ a.menu-toggle-btn:hover {
   width: 400px;
   color: white;
   background-color: black;
+  z-index: 100;
 }
 .side-drawer-close-btn {
   display: flex;
@@ -150,6 +160,10 @@ a.menu-close-btn:hover {
   text-decoration: none;
 }
 .side-drawer-menu-item:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.side-drawer-menu-item:visited {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
