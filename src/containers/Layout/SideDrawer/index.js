@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SideDrawer = () => (
   <div className="side-drawer-ovelay">
@@ -35,10 +36,26 @@ const SideDrawer = () => (
 
         <div className="side-drawer-menu">
           <ui>
-            <li className="side-drawer-menu-item">Home</li>
-            <li className="side-drawer-menu-item">Posts</li>
-            <li className="side-drawer-menu-item">Gallery</li>
-            <li className="side-drawer-menu-item">Contact</li>
+            <li className="side-drawer-menu-item">
+              <NavLink activeClassName="side-drawer-menu-item" to="/">
+                Home
+              </NavLink>
+            </li>
+            <li className="side-drawer-menu-item">
+              <NavLink activeClassName="side-drawer-menu-item" to="/post">
+                Posts
+              </NavLink>
+            </li>
+            <li className="side-drawer-menu-item">
+              <NavLink activeClassName="side-drawer-menu-item" to="/">
+                Gallery
+              </NavLink>
+            </li>
+            <li className="side-drawer-menu-item">
+              <NavLink activeClassName="side-drawer-menu-item" to="/">
+                Contact
+              </NavLink>
+            </li>
           </ui>
         </div>
       </div>

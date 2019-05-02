@@ -146,6 +146,12 @@ a.menu-close-btn:hover {
   padding-bottom: 20px;
   list-style: none;
   font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.side-drawer-menu-item:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 .home-page {

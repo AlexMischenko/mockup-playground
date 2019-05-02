@@ -5,13 +5,11 @@ import Home from '../Home'
 import PostDetails from '../PostDetails'
 
 const Routes = () => (
-  <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/post" component={PostDetails} />
-      <Route path="/post/:id" component={PostDetails} />
-    </Switch>
-  </Router>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/post" component={PostDetails} />
+    <Route path="/post/:id" component={PostDetails} />
+  </Switch>
 )
 
 export default Routes
